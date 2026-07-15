@@ -5,183 +5,238 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logina Esmaeil | Portfolio</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="logo">LE<span>.</span></div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="LoginaEsmaeilll  (1).pdf" download class="nav-btn">Download CV <i
-                        class="fas fa-download"></i></a></li>
+            <li><a href="LoginaEsmaeil (1).pdf" download class="nav-btn">Download CV <i class="fas fa-download"></i></a>
+            </li>
         </ul>
     </nav>
 
-    <header id="about" class="hero-section">
-        <div class="hero-container">
-            <div class="hero-content">
-                <span class="sub-title">Welcome to my space</span>
-                <h1>Hi, I'm <span>Logina Esmaeil</span></h1>
-                <h2>Junior Software Engineer</h2>
-                <p>A Frontend Developer and Software Engineering graduate with hands-on experience in building
-                    responsive web and mobile applications. Skilled in React, Flutter, and modern frontend technologies,
-                    with practical experience through ITI training. Passionate about creating user-friendly interfaces
-                    and scalable applications.</p>
+    <main>
+        <header id="about" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="sub-title">Welcome to my space</span>
+                    <h1>Hi, I'm <span>Logina Esmaeil</span></h1>
+                    <h2>Junior Software Engineer</h2>
+                    <p>A Frontend Developer and Software Engineering graduate with hands-on experience in building
+                        responsive web and mobile applications. Skilled in React, Flutter, and modern frontend
+                        technologies,
+                        with practical experience through ITI training. Passionate about creating user-friendly
+                        interfaces
+                        and scalable applications.</p>
 
-                <div class="hero-btns">
-                    <a href="LoginaEsmaeilll  (1).pdf" download class="btn-primary">Download CV <i
-                            class="fas fa-download"></i></a>
-                    <a href="#contact" class="btn-secondary">Let's Talk</a>
+                    <div class="hero-btns">
+                        <a href="LoginaEsmaeil (1).pdf" download class="btn-primary">Download CV <i
+                                class="fas fa-download"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="photo.jpeg" alt="Logina Esmaeil">
+                    </div>
                 </div>
             </div>
+        </header>
 
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="photo.jpeg" alt="Logina Esmaeil">
+        <section id="experience" class="section-container">
+            <h2 class="section-title">Experience & Internships</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">Jan 2026 - Jun 2026</div>
+                    <div class="timeline-content">
+                        <h3>Frontend & Cross-Platform Developer Trainee</h3>
+                        <h4>ITI (Information Technology Institute)</h4>
+                        <p>Developed multiple web and mobile applications using modern technologies. Applied best
+                            practices
+                            in responsive design and API integration.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">Mar 2026 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Web Development Instructor (Part-Time, Remote)</h3>
+                        <h4>iSchool</h4>
+                        <p>Deliver hands-on training in HTML, CSS, and JavaScript. Simplify complex programming concepts
+                            for
+                            students and guide them in building real-world projects.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <section id="experience" class="section-container">
-        <h2 class="section-title">Experience & Internships</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">Jan 2026 - Jun 2026</div>
-                <div class="timeline-content">
-                    <h3>Frontend & Cross-Platform Developer Trainee</h3>
-                    <h4>ITI (Information Technology Institute)</h4>
-                    <p>Developed multiple web and mobile applications using modern technologies. Applied best practices
-                        in responsive design and API integration.</p>
+        <section id="projects" class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-code"></i></div>
+                    <h3>HireReady AI</h3>
+                    <p>AI-powered recruitment platform featuring automated CV evaluation, AI-driven interviews, and
+                        intelligent job posting generation. Built the cross-platform mobile application and integrated
+                        Hugging Face models for automated CV parsing.</p>
+                    <div class="tags"><span>React.js</span><span>React Native</span><span>Supabase</span></div>
+                    <a href="https://hire-ready-ai-sigma.vercel.app/" target="_blank" class="repo-link"
+                        title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-film"></i></div>
+                    <h3>MovieVerse</h3>
+                    <p>Dynamic React.js application with API integration for real-time movie data, search functionality,
+                        and responsive design.</p>
+                    <div class="tags"><span>React.js</span><span>REST API</span></div>
+                    <a href="https://movie-verse-hx5i.vercel.app/" target="_blank" class="repo-link"
+                        title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <h3>ShopMax</h3>
+                    <p>Responsive e-commerce interface using SASS modular architecture with advanced mixins and nesting
+                        for scalable styling.</p>
+                    <div class="tags"><span>HTML5</span><span>SASS</span></div>
+                    <a href="https://shop-max-1arx.vercel.app/" target="_blank" class="repo-link"
+                        title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Memory Game</h3>
+                    <p>Interactive memory game built with TypeScript and Bootstrap, featuring responsive design and
+                        smooth animations.</p>
+                    <div class="tags"><span>TypeScript</span><span>Bootstrap</span></div>
+                    <a href="https://memory-game-theta-two.vercel.app/" target="_blank" class="repo-link"
+                        title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-gem"></i></div>
+                    <h3>LUMINA</h3>
+                    <p>Luxury jewelry e-commerce platform built with Next.js and Context API for seamless cart
+                        management and dynamic data handling.</p>
+                    <div class="tags"><span>Next.js</span><span>Context API</span></div>
+                    <a href="https://github.com/Logina2/Lumina.git" target="_blank" class="repo-link"
+                        title="View Source Code"><i class="fab fa-github"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>BeautyGlow</h3>
+                    <p>Cross-platform mobile app utilizing the Makeup API with advanced search filtering, dynamic
+                        routing, and persistent local storage for favorites.</p>
+                    <div class="tags"><span>React Native</span><span>EXPO</span></div>
+                    <a href="https://github.com/Logina2/ReactNative" target="_blank" class="repo-link"
+                        title="View Source Code"><i class="fab fa-github"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-spa"></i></div>
+                    <h3>SkinCare Platform</h3>
+                    <p>Cross-platform mobile application for managing skincare routines and products with an intuitive
+                        interface.</p>
+                    <div class="tags"><span>Flutter</span></div>
+                    <a href="https://github.com/Logina2/BeautyGlow-app" target="_blank" class="repo-link"
+                        title="View Source Code"><i class="fab fa-github"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-cat"></i></div>
+                    <h3>Cats Community</h3>
+                    <p>Modular UI design using SASS for scalable styling with responsive layout and clean aesthetics.
+                    </p>
+                    <div class="tags"><span>HTML5</span><span>SASS</span></div>
+                    <a href="https://cat-community-responsive.vercel.app/" target="_blank" class="repo-link"
+                        title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Mar 2026 - Present</div>
-                <div class="timeline-content">
-                    <h3>Web Development Instructor (Part-Time, Remote)</h3>
-                    <h4>iSchool</h4>
-                    <p>Deliver hands-on training in HTML, CSS, and JavaScript. Simplify complex programming concepts for
-                        students and guide them in building real-world projects.</p>
+        </section>
+
+        <section id="skills" class="section-container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-wrapper">
+                <div class="skill-category fade-in">
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3 (SASS), JavaScript (ES6+), TypeScript, React.js, Next.js</p>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Mobile Development</h3>
+                    <p>Flutter, React Native, Dart</p>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Backend & Services</h3>
+                    <p>Firebase, Supabase</p>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>UI / UX & Frameworks</h3>
+                    <p>Figma to Code, Bootstrap, Material UI, Responsive Design</p>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, GitHub</p>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Programming & AI</h3>
+                    <p>Python, C, C++, Generative AI Integration</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="section-container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-gem"></i></div>
-                <h3>LUMINA</h3>
-                <p>Designed a luxury jewelry e-commerce platform using Next.js and Context API for seamless cart
-                    management and dynamic data handling.</p>
-                <div class="tags"><span>Next.js</span><span>Context API</span></div>
-                <a href="https://github.com/Logina2/Lumina.git" target="_blank" class="repo-link"
-                    title="View Source Code"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-film"></i></div>
-                <h3>MovieVerse</h3>
-                <p>Developed a dynamic React.js application with API integration for real-time data.</p>
-                <div class="tags"><span>React.js</span><span>REST API</span></div>
-                <a href="https://github.com/Logina2/MovieVerse.git" target="_blank" class="repo-link"
-                    title="View Source Code"><i class="fab fa-github"></i></a>
-            </div>
+        <section id="contact" class="section-container contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-desc">I'm currently open to new opportunities and collaborations. Feel free to reach out!
+            </p>
 
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-shopping-bag"></i></div>
-                <h3>ShopMax</h3>
-                <p>Designed a responsive e-commerce interface using SASS modular architecture with advanced mixins and
-                    nesting for scalable styling.</p>
-                <div class="tags"><span>HTML5</span><span>SASS</span></div>
-                <a href="https://github.com/Logina2/ShopMax.git" target="_blank" class="repo-link"
-                    title="View Source Code"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-gamepad"></i></div>
-                <h3>Memory Game</h3>
-                <p>Created an interactive game using HTML5, Bootstrap, and TypeScript.</p>
-                <div class="tags"><span>TypeScript</span><span>Bootstrap</span></div>
-                <a href="https://github.com/Logina2/MemoryGame.git" target="_blank" class="repo-link"
-                    title="View Source Code"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-cat"></i></div>
-                <h3>Cats Community</h3>
-                <p>Designed a modular UI using SASS for scalable styling.</p>
-                <div class="tags"><span>HTML5</span><span>SASS</span></div>
-                <a href="https://github.com/Logina2/CatCommunity-Responsive" target="_blank" class="repo-link"
-                    title="View Source Code"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </section>
+            <div class="contact-grid">
+                <a href="https://linkedin.com/in/logina-e-442909238" target="_blank" class="contact-card fade-in"
+                    aria-label="Connect on LinkedIn">
+                    <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me professionally</p>
+                </a>
 
-    <section id="skills" class="section-container">
-        <h2 class="section-title">Skills & Technologies</h2>
-        <div class="skills-wrapper">
-            <div class="skill-category">
-                <h3>Frontend Development</h3>
-                <p>HTML5, CSS3 (SASS), JavaScript (ES6+), TypeScript, React.js, Next.js</p>
-            </div>
-            <div class="skill-category">
-                <h3>Mobile Development</h3>
-                <p>Flutter, React Native, Dart</p>
-            </div>
-            <div class="skill-category">
-                <h3>Backend & Services</h3>
-                <p>Firebase, Supabase</p>
-            </div>
-            <div class="skill-category">
-                <h3>UI / UX & Frameworks</h3>
-                <p>Figma to Code, Bootstrap, Material UI, Responsive Design</p>
-            </div>
-            <div class="skill-category">
-                <h3>Tools & Technologies</h3>
-                <p>Git, GitHub</p>
-            </div>
-            <div class="skill-category">
-                <h3>Programming & AI</h3>
-                <p>Python, C, C++, Generative AI Integration</p>
-            </div>
-        </div>
-    </section>
+                <a href="https://wa.me/201147403045" target="_blank" class="contact-card fade-in"
+                    aria-label="Chat on WhatsApp">
+                    <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>Let's chat directly</p>
+                </a>
 
-    <section id="contact" class="section-container contact-section">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-desc">I'm currently open to new opportunities and collaborations. Feel free to reach out!</p>
-
-        <div class="contact-grid">
-            <a href="https://linkedin.com/in/logina-e-442909238" target="_blank" class="contact-card">
-                <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
-                <h3>LinkedIn</h3>
-                <p>Connect with me professionally</p>
-            </a>
-
-            <a href="https://wa.me/201147403045" target="_blank" class="contact-card">
-                <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
-                <h3>WhatsApp</h3>
-                <p>Let's chat directly</p>
-            </a>
-
-            <a href="mailto:logyesmail3@gmail.com" class="contact-card">
-                <div class="icon-box"><i class="far fa-envelope"></i></div>
-                <h3>Email</h3>
-                <p>logyesmail3@gmail.com</p>
-            </a>
-        </div>
-    </section>
+                <a href="mailto:logyesmail3@gmail.com" class="contact-card fade-in" aria-label="Send email">
+                    <div class="icon-box"><i class="far fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>logyesmail3@gmail.com</p>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer class="main-footer">
         <p>&copy; 2026 Logina Esmaeil. All Rights Reserved.</p>
     </footer>
 
+    <script src="main.js"></script>
 </body>
 
 </html>
